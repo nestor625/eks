@@ -30,7 +30,7 @@ spec:
           name: odoo
         volumeMounts:
         - name: odoo-persistent-storage        
-          mountPath: /var/lib/odoo
+          mountPath: /bitnami/odoo
       volumes:
       - name: odoo-persistent-storage
         persistentVolumeClaim:
