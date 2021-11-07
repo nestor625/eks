@@ -18,7 +18,7 @@ spec:
         tier: mysql
     spec:
       containers:
-      - image: mysql:5.7
+      - image: mysql:5.7.36
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -28,7 +28,7 @@ spec:
           name: mysql
         volumeMounts:
         - name: mysql-persistent-storage
-          mountPath: /var/lib/mysql
+          mountPath: /var/lib/mysql1
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
@@ -59,4 +59,4 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi              
+      storage: 20Gi                            
