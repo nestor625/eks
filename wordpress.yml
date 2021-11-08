@@ -20,7 +20,7 @@ spec:
       containers:
       - image: wordpress:4.8-apache
         name: wordpress
-        eanv:
+        env:
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
         - name: WORDPRESS_DB_PASSWORD
